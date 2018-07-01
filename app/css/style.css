@@ -1,0 +1,60 @@
+@charset "utf-8";
+body {
+	background-color:#CACFD2;
+	margin-bottom:70px;
+}
+nav ul li {
+	padding:10px;
+	
+}
+nav ul li a{
+	font-size: 1.2em;
+	
+}
+#logo {
+	margin-top:-16px;
+	padding-left: 10px;
+	float:left;
+	padding-bottom:20px;
+}
+#menu {
+	float:right;
+}
+.navbar-inverse {
+	background-color: #3a3e61;
+}
+label {
+	color:#393d60;
+}
+.log_btn {
+	background-color:#007fd9;
+}
+.log_btn a {
+	color:#FFF;
+}
+.log_btn a:hover {
+	text-decoration:none;
+}
+.log_btn:hover {
+	background-color:#393d60;
+}
+.in{
+	margin-top:4px;
+}
+.foot {
+	height: 10px;
+}
+footer p {
+	color:#D8E6E7;
+}
+.fa{
+  cursor:pointer;
+ }
+ h4 {
+	 color: #22204A;
+	 font-size:1.7em
+}
+#billet {
+	width:58px;
+}
+
