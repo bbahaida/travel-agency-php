@@ -1,9 +1,9 @@
 <?php
 try{
-	$host = "localhost";
+	$host = "localhost:3308";
 	$username = "root";
 	$password = "";
-	$db="transport";
+	$db="trans_proj";
 
 	$bdd = new PDO("mysql:dbname=$db;host=$host", $username, $password) or die( mysql_error());
 }catch(Exception $e){
