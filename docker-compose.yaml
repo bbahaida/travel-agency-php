@@ -1,0 +1,28 @@
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: 'trans_proj'
+      MYSQL_USER: 'admin'
+      MYSQL_PASSWORD: 'admin'
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+    ports:
+      - "3308:3306"
+    volumes:
+      - ~/docker_volumes/mysql:/var/lib/mysql
+  trans-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trans-app
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment:
+      DB_HOST: mysql
+      DB_USER: admin
+      DB_PASSWORD: admin
+      DB_NAME: trans_proj
